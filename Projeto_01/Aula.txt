@@ -1,0 +1,78 @@
+Aula 01 -
+1 - ' header ' será seferênte ao cabeçalho
+
+2 - Precisamos entender o tamanho do nosso contexto(largura e altura)
+
+3 - Da um reset no documento
+	
+	*
+	margin: 0;
+	padding: 0;
+
+	html, body
+	height: 100%;
+
+	box-sizing: border-box; - define como a largura e a altura de um elemento são calculadas
+
+4 - .center - classe que definirá o contexto. No nosso caso tudo
+	que estiver dentro dessa tag será centralizado
+
+5 - Adicionando uma imagens:
+	<img src="images\logo.png" width="150px"/>
+
+	obs: voce pode usar também o margin pra mover o objeto
+
+6 - agora o banner:
+
+	.container-banner 
+	width: 100%;
+	height: 557px;
+	background-image: url('../images/header_bg.png');
+
+	background-size: cover;
+	Quero que o background-size cubra(cover) e ele se
+	posicione no centro:
+	background-position: center;
+
+7 - Construíndo o formulário
+	Trabalhando com a caixa:
+
+8 - Importante - A tag height ele precisa sempre herdar,
+	quando usamos %, do elemento anterior no caso o .center não tinha uma altura definida
+
+	.container-banner > .center {
+		?
+	}
+
+	.container-banner > .center {
+		height: 100%;
+	}
+
+	.form {
+	width: 400px;
+	height: 100%;
+	float: right - Coloca o objeto para direita.
+	background-color: white;
+	}
+
+9 - Alinhando:
+	Pra alinha o form a direita posso usar
+
+	.form {
+	float: right - Coloca o objeto para direita.
+	}
+
+	ou
+
+	.container-banner > .center {
+		height: 100%;
+		text-align: right;
+	}
+
+	.form {
+	width: 400px;
+	height: 100%;
+	display: inline-block;
+	background-color: white;
+	}
+
