@@ -1,0 +1,47 @@
+﻿Aula 02
+
+1 - No nosso projeto temos um efeito que o formulário está 	dentro da região onde fica o banner mais ao mesmo tempo no
+header e em baixo. Criando efeito:
+
+vamos usar o position
+
+no .form vou chamar a função calc() que calcula a porcentagem
+de pixel:
+	100% + 30px; - 100 pct mais 30px;
+
+O form agora tem mais 30px pa baixo temos que arrumar a 
+posição
+
+2 - Position:
+position: relative - para podermos manipular as propiedades(top, left, bottom, right)
+
+vou querer que suba 15px que é a metade de 30
+
+3 - Borda
+border: 8px solid #ccc;
+
+4 - Definindo o formulário
+h2 - Por padrão ele é negrito - font-weight: normal;
+
+5 - Importando font:
+
+@font-face {
+	sc: url('../fonts/OpenSans-Light.ttf');
+	font-family: "Open Sans";
+}
+
+definindo que todo o documento usa a fonte:
+
+* { 
+	font-family: "Open Sans";
+}
+
+6 - Formulário:
+<form>
+	  <div class="input-container">
+	  	<span>Nome*</span>
+	  	<input type="text" name="nome" required>
+	</div><!--input-container-->
+</form>
+
+required - campo obrigatório
