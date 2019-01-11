@@ -1,0 +1,38 @@
+﻿Aula 03
+
+1 - Vou criar mais uma div(container-list)
+
+2 - Colocando a lista pra entro do container:
+	
+	.container-list ul {
+		list-style-position: inside;
+	}
+
+3 - Obs: background:
+	background-orgin - só funciona com imagens
+	backgorund-clip:  - usando quando tem somente a cor
+
+	padding-box; - iclue o padding e corta o externo
+	content-box - corta o padding, começa a partir do conteúdo
+	border-box - inclui tudo
+
+4 - setando a seta:
+	<div class="arrow"></div><!-- arrow -->
+
+	.arrow {
+	width: 40px;
+	height: 40px;
+	background-image: url('../images/arrow.png');
+	}
+
+	Voce percebe que a seta não aparece por completo, ela fica cortada. Pra resolver é só usar:
+	background-size: 100% 100%;
+
+	fica falltando justamento os 40px do padding atribuído no container-2 pra seta tocar na borda
+	inferior da página. Para que a seta fique na posição requeria voce precisa por o position: relative;
+	colocar os 40px mais 20px pra ficar na posição desejada e pra centraliza usar o left: 50% e margin-left: -20px;
+
+	.arrow {
+	position: relative;
+	top: 60px;
+	left: 50%;
