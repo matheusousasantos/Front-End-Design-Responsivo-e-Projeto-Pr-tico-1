@@ -1,0 +1,13 @@
+﻿Aula 05
+
+1 - Vamos trabalhar no rodapé
+
+2 - Precisamos sempre limpar as flutuações que vem de objetos com
+    esse atributo, logo depois do ultimo objeto com esse atributo
+
+    <div class="clear"></div>
+
+    .clear {
+	clear: both;
+}
+
