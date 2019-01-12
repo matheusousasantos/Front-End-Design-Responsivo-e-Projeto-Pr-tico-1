@@ -1,0 +1,46 @@
+﻿Aula 07
+
+Criando uma galeria utilizando responsivo
+
+1 - Cada img-wraper é um item da nossa galeria(imagem)
+
+2 - Tratando o container:
+	.container {
+ 	width: 100%;
+ 	max-width: 768px;
+ 	margin: 20px auto;
+ 	padding: 30px 0;
+ 	border: 3px solid rgb(220,220,220);
+ }
+
+3 - Tratando o img-wraper
+	Aquela velha historia usar o display inline block ou usa
+	o float?
+
+	Usaremos o float.
+
+	.img-wraper {
+	width: 33.3%;
+	float: left;
+	background-color: #ccc;
+	border: 2px solid red;
+	}
+
+4 - Quero que a altura do elemento tenha o mesmo valor
+	da minha altura:
+
+	.img-wraper {
+	width: 33.3%;
+	padding-top: 33.3% - ou padding-bottom, vai dar na mesma
+	float: left;
+	background-color: #ccc;
+	border: 2px solid red;
+	}
+
+	No conteiner não constará os objetos pois eles estão flutuando
+
+	Uma solução será aplicar o <div class="clear"/> - depois
+	do ultimo elemento flutuado
+
+
+
