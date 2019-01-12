@@ -1,0 +1,10 @@
+﻿Aula 06
+
+Usando porcentagem pra margin e pro padding
+
+1 - Quando usamos % no padding eu estou dizendo que é 25% com base
+	na largura do elemento pai(body)
+
+	Obs - sempre com base na LARGURA do elemento pai.
+
+2 - O margin funciona do mesmo jeito
