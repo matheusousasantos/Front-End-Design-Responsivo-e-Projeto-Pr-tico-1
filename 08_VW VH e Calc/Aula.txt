@@ -1,0 +1,43 @@
+﻿Aula 08
+
+html, body {
+	height: 100%;
+}
+
+.sidebar {
+	width: 30%;
+	height: 100%;
+	background-color: black;
+	float: left;
+}
+
+.content {
+	width: 70%;
+	height: 100%;
+	background-color: #ccc;
+	float: right;
+}
+
+Com esse código da pra criar uma tela com um site bar a esquerda
+
+Combinação de pixel com porcentagem.
+
+.box {
+	width: calc((100% / 3) + 90px);
+	height: 90px;
+	background-color: red;
+}
+
+vw e vh
+
+.box {
+width: 100vw; - Viewport width = Largura do viewport(navegador)
+
+height: 100vh; - Viewport height = Largura do viewport(navegador)
+
+background-color: red;
+
+}
+
+Mais usado em navegadores desktop.
+Ele não leva em conta quando o site tem um scroll bar.
