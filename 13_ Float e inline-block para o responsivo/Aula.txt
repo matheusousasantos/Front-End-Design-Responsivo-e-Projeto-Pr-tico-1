@@ -1,0 +1,47 @@
+Aula 13:
+
+
+Float e Inline-block para responsivo:
+
+O float, quando a div pai diz que é para alinhas no centro, ele não alinha no centro(text-align).
+Para senar esse problema usaremos o display inline-block
+
+O display inline sempre tem um espaçamento.
+podemos senar com: margin-bottom: -4px; 
+
+Tratando o overflow(barra em baixo do navegador):
+
+.box:last-child {
+	margin-right 0;
+}
+
+Ele está criando uma margin em um objeto que não existe depois, não existe nada depois do ultimo(last)
+
+ou para torna isso padrão posso ir direto no meu container e colocar: overflow: hidden - quero que o espaçamento de todo objeto tentro do box seja invisivel.
+
+Obs: quando usamos o overflow hidden pode acontecer de cortar um objeto.
+
+Tirando o efeito do overflow:
+
+@media screen and (max-width: 768px) {
+
+	.box{
+		width: 50%;
+	}
+
+	.box:nth-of-type(2){ /* Quando dininuo a tela em 50% o segundo passa a ser ultimo */
+		margin-right: 0;
+	}
+}
+}
+
+@media screen and (max-width: 580px) {
+
+	.box{
+		width: 100%;
+		margin-right: 0; /* Todos ficam...*/
+	}
+
+}
+
+Com o display: inline-block o problema seria as margens porém pode ser feito em sites mais simples.
