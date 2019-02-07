@@ -1,78 +1,50 @@
-Aula 01 -
-1 - ' header ' será seferênte ao cabeçalho
+Aula 11 -
 
-2 - Precisamos entender o tamanho do nosso contexto(largura e altura)
+No nosso caso percebemos que ao diminuir a tela os quadrados ainda continuam um do lado do outro o que não seria legal em uma tela de celular.
 
-3 - Da um reset no documento
-	
-	*
-	margin: 0;
-	padding: 0;
+Podemos usar as midias queries:
 
-	html, body
-	height: 100%;
+media tem seu tipo screen
 
-	box-sizing: border-box; - define como a largura e a altura de um elemento são calculadas
-
-4 - .center - classe que definirá o contexto. No nosso caso tudo
-	que estiver dentro dessa tag será centralizado
-
-5 - Adicionando uma imagens:
-	<img src="images\logo.png" width="150px"/>
-
-	obs: voce pode usar também o margin pra mover o objeto
-
-6 - agora o banner:
-
-	.container-banner 
-	width: 100%;
-	height: 557px;
-	background-image: url('../images/header_bg.png');
-
-	background-size: cover;
-	Quero que o background-size cubra(cover) e ele se
-	posicione no centro:
-	background-position: center;
-
-7 - Construíndo o formulário
-	Trabalhando com a caixa:
-
-8 - Importante - A tag height ele precisa sempre herdar,
-	quando usamos %, do elemento anterior no caso o .center não tinha uma altura definida
-
-	.container-banner > .center {
-		?
+@media screen and (max-width: 580px){
+	.box{
+		width: 100%;
 	}
+}
 
-	.container-banner > .center {
-		height: 100%;
+ basicamento quando a largura da tela for menor que 580px
+ o width do box passa a ser 100% fazendo com que os outros caiam pra baixo
+
+ Posso adicionar mais midias.
+
+ @media screen and (max-width: 580px){
+	.box{
+		width: 50%;
 	}
+}
 
-	.form {
-	width: 400px;
-	height: 100%;
-	float: right - Coloca o objeto para direita.
-	background-color: white;
+@media screen and (max-width: 420px){
+	.box{
+		width: 100%;
 	}
+}
 
-9 - Alinhando:
-	Pra alinha o form a direita posso usar
+Assim quando chegar em uma determinada largura o box vai oculpar menos espaço da tela obrigando os boxs irem pra baixo
 
-	.form {
-	float: right - Coloca o objeto para direita.
+Usando o min-width:
+
+@media screen and (min-width: 580px){
+	.box{
+		width: 50%;
 	}
+}
 
-	ou
+Tambem poso usar no height:
 
-	.container-banner > .center {
-		height: 100%;
-		text-align: right;
+@media screen and (min-height: 580px){
+	.box{
+		width: 50%;
 	}
+}
 
-	.form {
-	width: 400px;
-	height: 100%;
-	display: inline-block;
-	background-color: white;
-	}
-
+assim como o min-height
