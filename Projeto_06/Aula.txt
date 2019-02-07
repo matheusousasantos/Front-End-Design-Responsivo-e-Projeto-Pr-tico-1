@@ -1,0 +1,6 @@
+﻿Aula 06:
+O nosso projeto não tem nada de reponsivo a partir de agora vamos tratar isso;
+
+Vamos definir todas as width com % os demais(width menores) vamos definir no media queries
+
+obs: Quando existe um objeto com width definido gera o overflow.
