@@ -1,0 +1,12 @@
+﻿Aula 07:
+
+max-width: define uma largua máxima, pode ser bem explorado no design responsivo pois se trata do valor máximo
+
+Trabalhando com responsivo:
+Quero que quando chegue em 1024(viewPort),que é um tamanho comum de tela, mude a estrutura.
+
+1 - Os dois elementos são flutuantes(form, container-list) então precisamos dar um clear pra compensar,
+	antes tinhamos uma altura fixa o que não faria diferença nenhuma agora temos de por.
+
+2 - Div cega - vou precisar encapsular as duas divs(form e container-lis) para quando for usado a media querie
+	cair pra proxima linha ficando o elemento em bloco.
